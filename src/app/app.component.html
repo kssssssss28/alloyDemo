@@ -1,5 +1,14 @@
 <div>
     <alloy-card  class="card">
-        ALLOY DEMO 
+        This app is built by using angular and alloy, read .RM file for more info
+    </alloy-card>
+    <alloy-card  class="card" (click)="request('GET')">
+        You can click this card to send mock get request
+
+        <div>
+            <ul>
+                <li *ngFor="let item of data">{{ item.name }}</li>
+            </ul>
+        </div>
     </alloy-card>
 </div>

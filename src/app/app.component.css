@@ -1,8 +1,11 @@
 .card{
   
-    height: 100px;
+    height: 100%;
     width: 25vw;
     display: flex;
     justify-content: center;
     padding: 5px;
+}
+.btn{
+    background-color: grey;
 }
