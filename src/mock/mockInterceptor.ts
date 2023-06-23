@@ -3,6 +3,7 @@ import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpR
 import { Observable, throwError } from 'rxjs';
 import Mock from 'mockjs';
 import { of } from 'rxjs';
+import * as isMock from '../../environments.json';
 
 @Injectable()
 export class MockInterceptor implements HttpInterceptor {
@@ -34,7 +35,7 @@ export class MockInterceptor implements HttpInterceptor {
     }
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
       const mockData = this.getMockData(req.url);
-      if (true) { // 判断是否开启Mock.js
+      if (isMock.mock) { // 判断是否开启Mock.js
         const mockResponse = Mock.mock(mockData);
         return of(new HttpResponse({ status: 200, body: mockResponse }));
       
