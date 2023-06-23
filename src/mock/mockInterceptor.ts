@@ -3,7 +3,7 @@ import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpR
 import { Observable, throwError } from 'rxjs';
 import Mock from 'mockjs';
 import { of } from 'rxjs';
-import * as isMock from '../environment';
+import * as isMock from '../environment.json';
 
 @Injectable()
 export class MockInterceptor implements HttpInterceptor {
