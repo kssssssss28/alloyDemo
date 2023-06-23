@@ -1,5 +1,4 @@
 {
     "mode": "production",
-    "hmr": true,
-    "mock":true
+    "mock":false
   }

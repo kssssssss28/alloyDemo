@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { reqOption, sendRequest } from './utils';
+import { reqOption } from 'src/interface';
 import { HttpService } from 'src/service/http.service';
+
+import env from '../environment.json'
 export interface Item {
   name: string;
   // 其他属性...
@@ -13,8 +15,10 @@ export interface Item {
 export class AppComponent {
   httpService: HttpService
   data: Item[] = [];
+  isMock = false
   constructor(httpService:HttpService){
     this.httpService = httpService
+    this.isMock = env.mock
   }
   title = 'template';
   request = async (method:string)=>{

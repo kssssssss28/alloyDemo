@@ -1,8 +1,8 @@
 <div>
     <alloy-card  class="card">
-        This app is built by using angular and alloy, read .RM file for more info
+        This app is built by using angular and alloy, read .RM file for more instruction
     </alloy-card>
-    <alloy-card  class="card" (click)="request('GET')">
+    <alloy-card *ngIf="isMock"  class="card" (click)="request('GET')">
         You can click this card to send mock get request
 
         <div>
@@ -10,5 +10,8 @@
                 <li *ngFor="let item of data">{{ item.name }}</li>
             </ul>
         </div>
+
+
     </alloy-card>
+    <input type="text"/>
 </div>
