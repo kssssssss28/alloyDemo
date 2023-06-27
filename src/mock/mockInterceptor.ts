@@ -3,7 +3,7 @@ import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpR
 import { Observable, throwError } from 'rxjs';
 import Mock from 'mockjs';
 import { of } from 'rxjs';
-import env from '../environment.json'
+import env from '../../environment.json'
 
 
 @Injectable()

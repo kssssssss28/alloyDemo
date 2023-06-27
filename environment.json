@@ -1,4 +1,6 @@
 {
-    "mode": "production",
-    "mock":false
-  }
+  "name":"demo",
+  "mode": "production",
+  "mock": false,
+  "hmr": true
+}

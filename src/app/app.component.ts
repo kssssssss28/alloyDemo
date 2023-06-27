@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { reqOption } from 'src/interface';
 import { HttpService } from 'src/service/http.service';
 
-import env from '../environment.json'
+import env from '../../environment.json'
 export interface Item {
   name: string;
   // 其他属性...
