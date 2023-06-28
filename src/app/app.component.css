@@ -1,11 +1,10 @@
-.card{
-  
-    height: 100%;
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+.card {
+  height: 100%;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
-.btn{
-    background-color: grey;
+.btn {
+  background-color: grey;
 }

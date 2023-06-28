@@ -1,17 +1,15 @@
 <div>
-    <alloy-card  class="card">
-        This app is built by using angular and alloy, read .RM file for more instruction
-    </alloy-card>
-    <alloy-card *ngIf="isMock"  class="card" (click)="request('GET')">
-        You can click this card to send mock get request
+  <alloy-card class="card">
+    This app is built by using angular and alloy, read .RM file for more instruction
+  </alloy-card>
+  <alloy-card *ngIf="isMock" class="card" (click)="request('GET')">
+    You can click this card to send mock get request
 
-        <div>
-            <ul>
-                <li *ngFor="let item of data">{{ item.name }}</li>
-            </ul>
-        </div>
-
-
-    </alloy-card>
-    <input type="text"/>
+    <div>
+      <ul>
+        <li *ngFor="let item of data">{{ item.name }}</li>
+      </ul>
+    </div>
+  </alloy-card>
+  <input type="text" />
 </div>

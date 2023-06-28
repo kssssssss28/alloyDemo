@@ -1,14 +1,15 @@
 {
   "name": "template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run check && ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "rulescheck": "eslint src --ext .ts",
+    "format": "npx prettier -w src"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.2",
     "@angular/cdk": "^15.2.2",
@@ -34,6 +35,7 @@
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
     "ngx-markdown": "^15.1.1",
+    "npm-check": "^6.0.1",
     "preact": "10.14.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.5.0",
@@ -59,6 +61,8 @@
     "@types/node": "^12.20.55",
     "@types/parse5": "^6.0.3",
     "@types/sass": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
     "chalk": "^5.2.0",
     "codelyzer": "^6.0.2",
     "concurrently": "^7.6.0",
@@ -68,6 +72,7 @@
     "cypress": "=9.7.0",
     "cypress-real-events": "^1.7.6",
     "doiuse": "^4.4.1",
+    "eslint": "^8.43.0",
     "fs-extra": "^11.1.1",
     "jasmine": "~3.99.0",
     "jasmine-core": "~3.99.0",
@@ -82,7 +87,7 @@
     "ng-inline-svg-2": "^15.0.1",
     "ng-packagr": "^15.2.2",
     "parse5": "^7.1.2",
-    "prettier": "2.8.6",
+    "prettier": "^2.8.8",
     "rimraf": "^4.4.1",
     "sass": "^1.63.2",
     "scss-bundle": "^3.1.2",
@@ -90,7 +95,7 @@
     "svg-to-ts": "^6.0.0",
     "ts-node": "~10.9.1",
     "tslint": "~6.1.0",
-    "typescript": "~4.8.4",
+    "typescript": "^4.8.4",
     "webpack-bundle-analyzer": "^4.8.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name":"demo",
   "mode": "production",
-  "mock": false,
+  "mock": true,
   "hmr": true
 }
